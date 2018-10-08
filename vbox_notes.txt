@@ -1,0 +1,14 @@
+
+
+VBoxManage list vms
+
+-- The following command will allow RDP connection to the running vm.
+
+VBoxManage modifyvm <server> --vrde on
+
+
+VBoxHeadless -s <server>
+or
+VBoxManage startvm ubuntu-server --type headless
+
+
